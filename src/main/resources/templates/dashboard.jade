@@ -1,0 +1,84 @@
+extends _bootstrap
+append styles
+
+block body
+	.container-fluid
+		.row
+			.col-sm-3.col-md-2.sidebar
+				ul.nav.nav-sidebar
+					li.active
+						a(href='#') Overview
+							span.sr-only (current)
+					li
+						a(href='/container') Container Catalogue
+					li
+						a(href='#') Orchestrate Services
+					li
+						a(href='#') Orchestrate Functionalities
+					li
+						a(href='#') Manage Users
+			.col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+				h1.page-header Overview
+				.row.placeholders
+					ol.breadcrumb
+						li.active Overview
+					.col-xs-6.col-sm-3.placeholder
+						.panel.panel-primary
+							.panel-heading
+								.row
+									.col-xs-3
+										i.fa.fa-list-alt.fa-5x
+									.col-xs-9.text-right
+										.huge 26
+										div Manage Services
+							a(href='#')
+								.panel-footer
+									span.pull-left View Details
+									span.pull-right
+										i.fa.fa-arrow-circle-right
+									.clearfix
+					.col-xs-6.col-sm-3.placeholder
+						.panel.panel-green
+							.panel-heading
+								.row
+									.col-xs-3
+										i.fa.fa-briefcase.fa-5x
+									.col-xs-9.text-right
+										.huge 12
+										div Manage Functionalities
+							a(href='#')
+								.panel-footer
+									span.pull-left View Details
+									span.pull-right
+										i.fa.fa-arrow-circle-right
+									.clearfix
+					.col-xs-6.col-sm-3.placeholder
+						.panel.panel-yellow
+							.panel-heading
+								.row
+									.col-xs-3
+										i.fa.fa-download.fa-5x
+									.col-xs-9.text-right
+										.huge 124
+										div Deployed Containers
+							a(href='#')
+								.panel-footer
+									span.pull-left View Details
+									span.pull-right
+										i.fa.fa-arrow-circle-right
+									.clearfix
+					.col-xs-6.col-sm-3.placeholder
+						.panel.panel-red
+							.panel-heading
+								.row
+									.col-xs-3
+										i.fa.fa-user.fa-5x
+									.col-xs-9.text-right
+										.huge 13
+										div Connected Users
+							a(href='#')
+								.panel-footer
+									span.pull-left View Details
+									span.pull-right
+										i.fa.fa-arrow-circle-right
+									.clearfix

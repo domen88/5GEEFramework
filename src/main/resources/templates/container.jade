@@ -1,0 +1,51 @@
+extends _bootstrap
+append styles
+
+block body
+	.container-fluid
+		.row
+			.col-sm-3.col-md-2.sidebar
+				ul.nav.nav-sidebar
+					li
+						a(href='/') Overview
+					li.active
+						a(href='#') Container Catalogue
+							span.sr-only (current)
+					li
+						a(href='#') Orchestrate Services
+					li
+						a(href='#') Orchestrate Functionalities
+					li
+						a(href='#') Manage Users
+			.col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+				h1.page-header Container Catalogue
+				.row.placeholders
+					ol.breadcrumb
+						li.active Containers
+					button.btn.btn-primary.right(type='button') Deploy new container
+					table.table.table-bordered.table-striped
+						thead
+							tr
+								th ID
+								th Name
+								th Tag
+								th Action
+						tbody
+							tr
+								td 454E61A0DAB08CF26F
+								td Ubuntu
+								td latest
+								td
+									button.btn.btn-primary.right(type='button') Action
+							tr
+								td 6B66866C3E47985162
+								td centos
+								td 4.0.2
+								td
+									button.btn.btn-primary.right(type='button') Action
+							tr
+								td 409E6AC6DCA6F5E18D
+								td mongodb
+								td latest
+								td
+									button.btn.btn-primary.right(type='button') Action

@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport",content="width=device-width, initial-scale=1")
+		meta(name="description",content="")
+		meta(name="author",content="")
+		link(rel="icon",href="favicon.ico")
+		title= title
+		block styles
+			link(rel="stylesheet",href="css/bootstrap.min.css")
+			link(href='css/dashboard.css', rel='stylesheet')
+			link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+	body(data-spy="scroll",data-target=".scrollspy")
+		nav.navbar.navbar-fixed-top
+			.container-fluid.topBar
+				.navbar-header
+					button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand(href='#')
+						img.logo(src='../img/5GEE.png', alt='5GEE')
+				#navbar.navbar-collapse.collapse
+					ul.nav.navbar-nav.navbar-right
+						li.dropdown
+							a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+								| Admin
+								span.caret
+							ul.dropdown-menu
+								li
+									a(href='#') Action
+								li
+									a(href='#') Another action
+								li
+									a(href='#') Something else here
+								li.divider(role='separator')
+								li
+									a(href='#') Separated link
+		block body
+			
+		block scripts
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+			script(src="js/bootstrap.min.js")
